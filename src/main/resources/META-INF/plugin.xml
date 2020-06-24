@@ -1,0 +1,33 @@
+<idea-plugin>
+    <id>org.eduami.thridPlugin</id>
+    <name>thirdPlugin</name>
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+    <description><![CDATA[
+    Enter short description for your plugin here.<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <!-- Add your actions here -->
+        <group id="org.eduami.TestSight" text="TestSight" description="Get Insights about your code">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action class="org.eduami.TestSightAction" id="org.eduami.TestSightAction.Actions.Configure" text="Configure"/>
+            <action class="org.eduami.TestSightAction" id="org.eduami.TestSightAction.Actions.Analyze" text="Analyze"/>
+        </group>
+
+<!--        <action id="org.eduami.TestSightAction" class="org.eduami.TestSightAction" text="TestSight"-->
+<!--                description="SDK Action Example">-->
+<!--            <add-to-group group-id="ToolsMenu" anchor="first"/>-->
+<!--        </action>-->
+    </actions>
+</idea-plugin>
